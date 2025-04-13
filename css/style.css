@@ -1,0 +1,430 @@
+/* Reset & Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef1f5;
+    color: #333;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Card/Container */
+.card {
+    background: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card .details {
+    flex: 1;
+}
+
+.card .details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #34495e;
+}
+
+.card .details p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.card .details a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .details a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #1f6392;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+    border-radius: 12px;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.popup p {
+    line-height: 1.6;
+}
+
+.popup-close {
+    float: right;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .popup {
+        width: 95%;
+    }
+}
+
+/* Reset & Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef1f5;
+    color: #333;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Card/Container */
+.card {
+    background: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card .details {
+    flex: 1;
+}
+
+.card .details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #34495e;
+}
+
+.card .details p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.card .details a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .details a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #1f6392;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+    border-radius: 12px;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.popup p {
+    line-height: 1.6;
+}
+
+.popup-close {
+    float: right;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Gender-Based Container Colors */
+.boy-container {
+    background-color: #3498db; /* Blue for Boys */
+    border-left: 5px solid #2980b9;
+}
+
+.girl-container {
+    background-color: #f1c6d2; /* Light Pink for Girls */
+    border-left: 5px solid #e91e63;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .popup {
+        width: 95%;
+    }
+}
+
+/* Button */
+.card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #27ae60;  /* Change the color to green */
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #2ecc71;  /* Lighter green on hover */
+}

@@ -1,0 +1,376 @@
+/* General Reset & Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Page Titles */
+h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Admin Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #eef6ff;
+}
+
+/* Buttons */
+a {
+    text-decoration: none;
+}
+
+a.button, input[type="submit"] {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover, input[type="submit"]:hover {
+    background-color: #1f6392;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Image Preview in Edit Page */
+img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Admin Add Link */
+.add-link {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.add-link:hover {
+    background-color: #27ae60;
+}
+
+/* Action Buttons in Table Rows */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Edit Button */
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #1f6392;
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f3f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Form Container */
+.form-wrapper {
+    width: 100%;
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+/* Labels */
+.form-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs & Textarea */
+.form-wrapper input[type="text"],
+.form-wrapper input[type="number"],
+.form-wrapper input[type="file"],
+.form-wrapper textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fefefe;
+    transition: border-color 0.3s;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-wrapper textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Image Preview */
+.image-preview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-preview img {
+    max-width: 180px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.form-wrapper .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.form-wrapper input[type="submit"],
+.form-wrapper .cancel-button {
+    padding: 12px 22px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+/* Primary Button */
+.form-wrapper input[type="submit"] {
+    background-color: #3498db;
+}
+
+.form-wrapper input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Cancel Button */
+.form-wrapper .cancel-button {
+    background-color: #e74c3c;
+    text-align: center;
+}
+
+.form-wrapper .cancel-button:hover {
+    background-color: #c0392b;
+}
+/* Add this to your admin-style.css file */
+
+/* General button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Submit button styles */
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Cancel button styles (Back to Admin Page) */
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    margin-left: 10px; /* Adds spacing between buttons */
+}
+
+.btn-cancel:hover {
+    background-color: #e53935;
+}
+
+/* --- Responsive Layout for Admin Panel --- */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .add-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .btn-edit,
+    .btn-delete {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .add-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+
+    .btn-edit,
+    .btn-delete {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
